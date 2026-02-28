@@ -1,0 +1,177 @@
+@import '@fontsource/inter/300.css';
+@import '@fontsource/inter/400.css';
+@import '@fontsource/inter/500.css';
+@import '@fontsource/inter/600.css';
+@import '@fontsource/inter/700.css';
+@import '@fontsource/inter/800.css';
+@import '@fontsource/inter/900.css';
+
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+@layer base {
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html, body, #root {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    height: 100%;
+  }
+
+  body {
+    background: #d1d5db;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+  }
+
+  * { scrollbar-width: none; }
+  *::-webkit-scrollbar { display: none; }
+}
+
+@layer components {
+  .phone-frame {
+    @apply relative overflow-hidden bg-[#fafafa];
+    width: 390px;
+    height: 844px;
+    border-radius: 50px;
+    box-shadow: 0 50px 100px rgba(0,0,0,0.4), 0 0 0 12px #111827, 0 0 0 14px #374151;
+  }
+
+  .screen {
+    @apply absolute inset-0 overflow-y-auto overflow-x-hidden bg-[#fafafa];
+  }
+
+  .gradient-text {
+    background: linear-gradient(135deg, #7C3AED, #EC4899);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .btn-primary {
+    @apply w-full py-4 px-6 rounded-2xl text-white font-semibold text-base
+           transition-all duration-150 active:scale-[0.97] cursor-pointer border-0;
+    background: linear-gradient(135deg, #7C3AED, #EC4899);
+    letter-spacing: -0.2px;
+    font-family: inherit;
+  }
+  .btn-primary:hover { opacity: 0.93; }
+  .btn-primary:disabled { opacity: 0.5; cursor: not-allowed; }
+
+  .btn-secondary {
+    @apply w-full py-4 px-6 rounded-2xl bg-gray-100 text-gray-700 font-semibold
+           text-base transition-all duration-150 active:scale-[0.97] cursor-pointer border-0;
+    font-family: inherit;
+  }
+  .btn-secondary:hover { @apply bg-gray-200; }
+
+  .btn-ghost {
+    @apply w-full py-4 px-6 bg-transparent font-medium text-sm
+           border-0 cursor-pointer transition-all duration-150;
+    color: rgba(255,255,255,0.65);
+    font-family: inherit;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-3.5 rounded-2xl border-2 border-gray-200 text-[15px]
+           bg-white text-gray-900 outline-none transition-colors duration-200;
+    font-family: inherit;
+  }
+  .input-field:focus { border-color: #7C3AED; }
+
+  .chip {
+    @apply inline-flex items-center px-3.5 py-1.5 rounded-full text-[13px] font-semibold
+           border-2 border-gray-200 bg-white cursor-pointer transition-all duration-150 select-none whitespace-nowrap;
+    font-family: inherit;
+  }
+  .chip:hover:not(.chip-selected) { border-color: #7C3AED; color: #7C3AED; }
+  .chip-selected {
+    background: linear-gradient(135deg, #7C3AED, #EC4899);
+    @apply text-white border-transparent;
+  }
+
+  .activity-card {
+    @apply rounded-3xl border-[2.5px] border-gray-200 p-5 cursor-pointer
+           transition-all duration-200 bg-white text-center select-none;
+  }
+  .activity-card:hover:not(.activity-selected) { border-color: #a78bfa; }
+  .activity-selected {
+    border-color: #7C3AED;
+    background: linear-gradient(135deg, #ede9fe, #fce7f3);
+  }
+
+  .profile-card {
+    @apply bg-white rounded-3xl overflow-hidden cursor-pointer transition-transform duration-200;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+  }
+  .profile-card:hover { transform: translateY(-2px); }
+
+  .match-badge {
+    @apply text-white text-[11px] font-extrabold rounded-full px-2.5 py-0.5 whitespace-nowrap;
+    background: linear-gradient(135deg, #7C3AED, #EC4899);
+  }
+
+  .tag-pill { @apply bg-[#ede9fe] text-[#7C3AED] text-xs font-bold rounded-full px-2.5 py-0.5; }
+  .tag-pill-white {
+    @apply bg-white text-[#7C3AED] text-[13px] font-bold rounded-full px-3.5 py-1.5;
+    box-shadow: 0 2px 8px rgba(124,58,237,0.15);
+  }
+
+  .bubble-me {
+    @apply text-white text-sm leading-relaxed self-end;
+    background: linear-gradient(135deg, #7C3AED, #EC4899);
+    border-radius: 18px 18px 4px 18px;
+    padding: 10px 14px;
+    max-width: 76%;
+    word-break: break-word;
+  }
+  .bubble-them {
+    @apply bg-gray-100 text-gray-900 text-sm leading-relaxed self-start;
+    border-radius: 18px 18px 18px 4px;
+    padding: 10px 14px;
+    max-width: 76%;
+    word-break: break-word;
+  }
+
+  .location-row {
+    @apply flex items-center justify-between bg-white rounded-2xl px-[18px] py-4
+           border-2 border-gray-200 cursor-pointer transition-all duration-150 select-none mb-2.5;
+  }
+  .location-row:hover:not(.location-selected) { border-color: #c4b5fd; }
+  .location-selected { border-color: #7C3AED; }
+
+  .day-cell {
+    @apply flex flex-col items-center py-2.5 rounded-2xl bg-white border-2 border-gray-200
+           cursor-pointer transition-all duration-150 select-none;
+  }
+  .day-cell:hover:not(.day-selected) { border-color: #c4b5fd; }
+  .day-selected { background: linear-gradient(135deg, #7C3AED, #EC4899); border-color: transparent; }
+
+  .bottom-nav { @apply flex bg-white border-t border-gray-100; padding-bottom: 16px; }
+  .nav-item {
+    @apply flex-1 flex flex-col items-center justify-center gap-1 pt-2.5
+           text-[11px] font-semibold text-gray-400 border-0 bg-transparent cursor-pointer
+           transition-colors duration-150;
+    font-family: inherit;
+  }
+  .nav-item.active { color: #7C3AED; }
+
+  .progress-track { @apply bg-gray-200 rounded-full h-1 flex-1; }
+  .progress-fill {
+    @apply h-1 rounded-full transition-all duration-300 ease-out;
+    background: linear-gradient(135deg, #7C3AED, #EC4899);
+  }
+
+  .status-bar {
+    @apply absolute top-0 left-0 right-0 h-12 flex items-start justify-between
+           px-6 pt-4 text-xs font-bold z-50 pointer-events-none;
+  }
+
+  .sticky-action {
+    @apply sticky bottom-0 px-6 pb-8 pt-3;
+    background: linear-gradient(to top, #fafafa 65%, transparent);
+  }
+}
