@@ -1,16 +1,28 @@
-# React + Vite
+# AnyBuddy - Social Matching for Wellness & Leisure 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+AnyBuddy is a Social Matching App designed to connect people for real-life wellness and leisure experiences. Unlike dating or professional networking apps, AnyBuddy focuses on "doing life together" through shared interests and built-in logistics.
 
-Currently, two official plugins are available:
+## 🌟 Key Features
+* [cite_start]**Quick Match Questionnaire:** Dynamic quiz to capture leisure preferences and availability. [cite: 13, 14]
+* [cite_start]**Smart Matching:** Relevance scoring to prioritize profiles based on shared interests and location. [cite: 18, 19]
+* [cite_start]**Dedicated Chat:** Integrated communication to foster authentic connections and plan activities. [cite: 20, 21]
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📊 Project Management & Strategy (PM Perspective)
 
-## React Compiler
+### Market Opportunity
+[cite_start]AnyBuddy addresses a critical gap in the Israeli market: the lack of a single platform uniting niche social connections (Parties, Nutrition, Fitness) with built-in activity logistics. [cite: 51, 52, 53]
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Core User Stories
+* [cite_start]**UX/UI & Personalization:** As a user, I want to select specific activities (e.g., concerts, hiking) so the app can personalize my matches. [cite: 108]
+* [cite_start]**Location-Based Logic:** As a user, I want to see matches available in my area to ensure real-world meeting feasibility. [cite: 109]
 
-## Expanding the ESLint configuration
+### Risk Management
+* [cite_start]**Technical:** Algorithm accuracy optimization via continuous beta testing. [cite: 145]
+* [cite_start]**Privacy:** Implementation of end-to-end encryption and GDPR standards for chat safety. [cite: 145]
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Business KPIs
+* [cite_start]**Conversion:** Targeted 30% Match-to-Activity conversion rate by Q3. [cite: 171]
+* [cite_start]**Retention:** 35% 30-day post-event retention target. [cite: 171]
+
+---
+*Developed as a functional prototype to demonstrate end-to-end SDLC management, from product specification to deployment.*
