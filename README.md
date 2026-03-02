@@ -2,6 +2,13 @@
 
 AnyBuddy is a Social Matching App designed to connect people for real-life wellness and leisure experiences. Unlike dating apps, AnyBuddy focuses on "doing life together" through shared interests and built-in logistics.
 
+🚀 Project Evolution: From Design to Delivery
+The development of AnyBuddy followed a structured SDLC to ensure product-market fit and technical feasibility:
+
+Interactive UX Mock: Before full-scale development, an Interactive HTML Mock was built to validate the 12-screen user journey and the complex matching logic.
+
+Functional Web App: The final implementation was built using React, transforming the validated design into a scalable, state-managed application.
+
 ## 🌟 Key Features
 * **Quick Match Questionnaire:** Dynamic quiz to capture leisure preferences (Genre, Trip Type, etc.) and availability.
 * **Smart Matching:** Relevance scoring to prioritize profiles based on shared interests and location.
