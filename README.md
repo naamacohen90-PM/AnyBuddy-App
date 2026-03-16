@@ -1,11 +1,12 @@
 # AnyBuddy - Social Matching for Wellness & Leisure 🚀
 
+## 🔗 [Live Demo - Experience AnyBuddy Here](https://naamacohen90-pm.github.io/AnyBuddy-App/)
 AnyBuddy is a Social Matching App designed to connect people for real-life wellness and leisure experiences. Unlike dating apps, AnyBuddy focuses on "doing life together" through shared interests and built-in logistics.
 
 ## 🚀 Project Evolution: From Design to Delivery 
 The development of AnyBuddy followed a structured SDLC to ensure product-market fit and technical feasibility:
 
-* **Interactive UX Mock:** Before full-scale development, an [Interactive HTML Mock](./ux-design/interactive-mock.html) was built to validate the 12-screen user journey and the complex matching logic.
+* **Interactive UX Mock:** Before full-scale development, an Interactive HTML Mock was built to validate the 12-screen user journey and the complex matching logic.
 * **Functional Web App:** The final implementation was built using **React**, transforming the validated design into a scalable, state-managed application.
 
 ## 🌟 Key Features
